@@ -2,7 +2,7 @@ package linkedList;
 
 public class LinkedList {
 
-	 Node head;  //This will be head pointer for the node
+	 Node head;  //This will be head pointer for linked List
 	
 	/**
 	 * Creating inner class Node.
