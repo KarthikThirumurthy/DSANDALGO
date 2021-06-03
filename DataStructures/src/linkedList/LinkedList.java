@@ -24,7 +24,7 @@ public class LinkedList {
 	 * @param list- List for which the integer has to be added to
 	 * @return updated list with added Integer
 	 */
-	private static LinkedList add(int i, LinkedList list) {
+	 static LinkedList add(int i, LinkedList list) {
 
 		/**
 		 * Create new node based on data passed and check if the head is not null. if
@@ -58,25 +58,25 @@ public class LinkedList {
 	}
 
 	private static void deleteNode(int i, LinkedList list) {
-		//handling corner Cases
-		if(list.head==null)
+		// handling corner Cases
+		if (list.head == null)
 			return;
-					
-		Node node= list.head;
+
+		Node node = list.head;
 		Node previous = null;
-		while(node!=null ) {
-			
-			if(node.data==i) {
-				previous.next=node.next;
+		while (node != null) {
+
+			if (node.data == i) {
+				previous.next = node.next;
 				break;
 			}
-			previous=node;
-			node= node.next;
-			
+			previous = node;
+			node = node.next;
+
 		}
 	}
 
-	private static void print(LinkedList list) {
+	static void print(LinkedList list) {
 
 		Node current = list.head;
 		while (current != null) {
